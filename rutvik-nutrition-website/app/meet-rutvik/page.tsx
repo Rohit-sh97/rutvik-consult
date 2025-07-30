@@ -21,7 +21,7 @@ export default function MeetRutvikPage() {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           <div className="flex justify-center">
             <Image
-              src="/RUTVIKweEB.jpg"
+              src="/RUTVIKwEB.jpg"
               alt="Rutvik - Certified Nutritionist"
               width={500}
               height={600}
