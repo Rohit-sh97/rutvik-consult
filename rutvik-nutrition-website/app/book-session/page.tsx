@@ -30,7 +30,7 @@ export default function BookSessionPage() {
   e.preventDefault();
 
   try {
-    const response = await fetch("http://localhost:5000/api/form/submit-form", {
+    const response = await fetch("https://rutvik-consult.onrender.com/api/form/submit-form", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
