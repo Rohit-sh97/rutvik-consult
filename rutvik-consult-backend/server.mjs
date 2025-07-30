@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 
 const allowedOrigins = [
-  "https://rutviknutrition.vercel.app",
+  "https://rutvik-consult-nvi3.vercel.app",
   "http://localhost:3000",
 ];
 
