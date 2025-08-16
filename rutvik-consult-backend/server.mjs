@@ -3,6 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import { connectDB } from "./config/db.js";
 import formRoutes from "./routes/formRoutes.js";
+import createOrder from "./routes/createRoute.js"
 
 dotenv.config();
 
@@ -34,6 +35,7 @@ connectDB();
 app.get("/", (req, res) => res.send("API running"));
 
 app.use("/api/form", formRoutes);
+app.use("/api/payment", createOrder);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

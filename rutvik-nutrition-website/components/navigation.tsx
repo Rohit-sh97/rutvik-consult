@@ -10,6 +10,7 @@ export default function Navigation() {
 
   const navItems = [
     { name: "Home", href: "/" },
+    { name: "Meet Shamal", href: "/meet-shamal"},
     { name: "Meet Rutvik", href: "/meet-rutvik" },
     { name: "Programs", href: "/programs" },
     { name: "Feedback", href: "/feedback" },
