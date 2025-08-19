@@ -17,7 +17,7 @@ export default function HomePage() {
 
 const handlePayment = async () => {
   // Call backend to create order
-  const res = await fetch("https://rutvik-consult-nvi3.vercel.app/api/payment/createOrder", {
+  const res = await fetch("https://rutvik-consult.onrender.com/api/payment/createOrder", {
     method: "POST",
   });
   const data = await res.json();
