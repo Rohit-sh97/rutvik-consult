@@ -7,11 +7,11 @@ export const createOrder = async (req, res) => {
       key_secret: process.env.RAZORPAY_KEY_SECRET,
     });
 
-    const options = {
-      amount: 999 * 100, // ₹999 in paise
-      currency: "INR",
-      receipt: `receipt_order_${Date.now()}`,
-    };
+   const options = {
+  amount: 2 * 100, 
+  currency: "INR",
+  receipt: `receipt_order_${Date.now()}`,
+};
 
     const order = await razorpay.orders.create(options);
 

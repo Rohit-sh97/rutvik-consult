@@ -17,7 +17,7 @@ export default function HomePage() {
 
 const handlePayment = async () => {
   // Call backend to create order
-  const res = await fetch("http://localhost:5000/api/payment/createOrder", {
+  const res = await fetch("https://rutvik-consult-nvi3.vercel.app/api/payment/createOrder", {
     method: "POST",
   });
   const data = await res.json();
@@ -53,7 +53,7 @@ const handlePayment = async () => {
       <div className="flex justify-center">
         <div className="relative">
           <Image
-            src="/Shamalpic.jpg" 
+            src="/detox.jpg" 
             alt="Shamal - Wellness Coach"
             width={400}
             height={500}
@@ -74,19 +74,19 @@ const handlePayment = async () => {
           Empower Your Wellness with{" "}
           <span className="text-green-500">Shamal</span>
         </h1>
-        <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-          Holistic health guidance for weight management, balanced nutrition,
-          and overall lifestyle transformation. Get personalized programs with
-          one-on-one consultations, wellness check-ins, and sustainable routines
-          designed just for you.
+         <p className="text-2xl md:text-4xl text-gray-800 leading-relaxed">
+         Detox batch starting soon.
         </p>
+        <p className="text-2xl md:text-2xl font-bold text-gray-800 leading-relaxed">
+          Get personalized programs with one-on-one consultations, Special offer 3000/-rs course in just 999/-rs
+          </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <Button
             size="lg"
             onClick={handlePayment}
             className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 text-lg"
           >
-            Book Your Se
+            Book Your Seat
           </Button>
           <Link href="/meet-shamal">
             <Button
@@ -114,7 +114,7 @@ const handlePayment = async () => {
           "/results/pic 5.jpg",
           "/results/pic 6.jpg",
         ]}
-        speed={30} // lower = faster
+        speed={30}
       />
     </div>
 
